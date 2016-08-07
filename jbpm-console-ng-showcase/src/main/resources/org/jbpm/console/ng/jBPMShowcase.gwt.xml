@@ -101,6 +101,13 @@
   <!-- Process & Task dashboard -->
   <inherits name="org.jbpm.dashboard.renderer.DashboardRendererApi"/>
   <inherits name="org.jbpm.dashboard.renderer.client.DashboardRendererClient"/>
+  <!-- designer extensions -->
+  <inherits name="org.jbpm.designer.jBPMDesignerExtensionsClient"/>
+  <inherits name="org.jbpm.designer.jBPMDesignerCMMNClient"/>
+  <inherits name="org.jbpm.designer.jBPMDesignerUMLClient"/>
+  <inherits name="org.jbpm.designer.jBPMDesignerVDMLClient"/>
+  <inherits name="org.jbpm.designer.jBPMDesignerSMMClient"/>
+
 
   <!-- Specify the paths for translatable code -->
   <source path='client'/>

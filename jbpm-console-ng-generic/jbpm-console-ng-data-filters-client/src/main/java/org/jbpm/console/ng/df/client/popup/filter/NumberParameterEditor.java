@@ -17,8 +17,8 @@
 package org.jbpm.console.ng.df.client.popup.filter;
 
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.event.logical.shared.ValueChangeEvent;
-import com.google.gwt.event.logical.shared.ValueChangeHandler;
+//import com.google.gwt.event.logical.shared.ValueChangeEvent;
+//import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Composite;
@@ -49,10 +49,11 @@ public class NumberParameterEditor extends Composite {
     public void init(Number value, final Listener listener) {
         this.listener = listener;
         if (value != null) input.setValue(value.toString());
-        input.addValueChangeHandler(new ValueChangeHandler<String>() {
-            public void onValueChange(ValueChangeEvent<String> event) {
-                listener.valueChanged(new Double(event.getValue()));
-            }
-        });
+//        input.addValueChangeHandler(new ValueChangeHandler<String>() {
+//            public void onValueChange(ValueChangeEvent<String> event) {
+//                listener.valueChanged(new Double(event.getValue()));
+//            }
+//        });
     }
 }
+
